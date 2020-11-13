@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Gastrofy;
+    src: url(../../../assets/fonts/35FBDC_1_0.woff2);
+    src: url(../../../assets/fonts/35FBDC_3_0.woff2);
+    src: url(../../../assets/fonts/Celias-Medium.woff2);
+}
+
+
+/* nav bar css */
+
+._navbar {
+    display: flex;
+    padding: 0px 189px;
+    justify-content: space-between;
+    text-align: center;
+    background: white;
+    box-shadow: 10px -3px 8px black;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul li:last-child {
+    padding-right: unset;
+}
+
+.navbar-logo {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.navbar-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu ul li {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: Gastrofy;
+}
+
+.navbar-menu ul li:last-child {
+    font-weight: 400;
+    font-size: 25px;
+    font-family: Gastrofy;
+}
+
+.display-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-icons ul li {
+    font-size: 12px;
+    padding: 10px 24px;
+}
+
+.navbar-icon {
+    height: 30px;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 70px;
+    background: white;
+}
+
+.text-light {
+    color: #dcdddc !important;
+}
+
+.text-dark {
+    color: #fa85a5 !important;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.d-flex.navbar-mobile {
+    display: none !important;
+}
+
+@media (max-width:1024px) {
+    ._navbar {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width:768px) {
+    ._navbar {
+        flex-direction: column;
+    }
+    .navbar-toggler-icon {
+        width: 14px;
+        height: 14px;
+        color: #333 !important;
+        background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+    .d-flex.navbar-mobile {
+        display: flex !important;
+    }
+    .navbar-desktop {
+        display: none;
+    }
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background: white;
+    height: 100vh;
+    width: 280px;
+    flex-grow: 1;
+    list-style: none;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    justify-content: center;
+    padding: 0 0 40px 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+    -moz-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    left: -100%;
+}
+
+.navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.3s ease-in;
+    -o-transition: left 0.3s ease-in;
+    -moz-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+}

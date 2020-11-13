@@ -1,0 +1,184 @@
+@font-face {
+    font-family: Gastrofy;
+    src: url(../../../assets/fonts/35FBDC_1_0.woff2);
+    src: url(../../../assets/fonts/35FBDC_3_0.woff2);
+    src: url(../../../assets/fonts/Celias-Medium.woff2);
+}
+
+
+/* body style */
+
+.body {
+    background-color: #eef2f3;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 93px;
+}
+
+.upper-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    /* padding: 123px 641px 38px 600px; */
+}
+
+.check-icon {
+    height: 19px;
+    margin-top: 8px;
+}
+
+.upper-section .heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.upper-section {
+    line-height: 2;
+}
+
+.input {
+    border: unset;
+    width: 112%;
+    padding: 5px;
+    margin: 23px 0px 0px -15px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.truck-icon {
+    width: 70px;
+}
+
+.center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #c5c7c7;
+    margin: 24px auto;
+}
+
+
+/* bottom */
+
+.lower-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0px 120px 0px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.menu-image {
+    width: 259px;
+}
+
+.btn- {
+    margin-top: 25px;
+    width: 249px;
+    color: #fff;
+    background-color: #fa85a5;
+    font-weight: 700;
+    border-radius: 28px;
+    border: unset;
+    padding: 8px;
+    outline: 0;
+}
+
+.btn-:focus {
+    outline: 0 !important;
+}
+
+.btn-chat {
+    position: fixed;
+    background-color: #cacecf;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    border: unset;
+    outline: none;
+}
+
+.svg-chat {
+    width: 28px;
+}
+
+.modal-content {
+    width: 500px;
+    height: 650px;
+}
+
+.close {
+    position: absolute;
+    left: 7px;
+}
+
+.sub-heading {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #64676a;
+    font-family: 'Gastrofy';
+}
+
+.btn-pop-up {
+    background-color: #fff57f;
+    width: 249px;
+    color: #333;
+    font-weight: 700;
+    border-radius: 28px;
+    border: unset;
+    padding: 8px;
+}
+
+.btn-pop-up:hover {
+    background-color: #fff57f;
+    color: #333;
+}
+
+@media (max-width:768px) {
+    .footer {
+        flex-direction: column;
+    }
+    .body {
+        padding-top: 181px;
+    }
+}
+
+@media (max-width:425px) {
+    .modal-content {
+        width: 100%;
+        height: 100vh;
+        border: 0;
+        border-radius: 0px;
+    }
+    .modal.show .modal-dialog {
+        margin: 0;
+    }
+}
